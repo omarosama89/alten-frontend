@@ -1,7 +1,8 @@
 let vehicles_host;
 let customers_host;
 let realtime_host;
-if (process.env['DOCKER_HOST'] == 'localhost') {
+console.log(process.env)
+if (process.env['NODE_ENV'] == 'development') {
     vehicles_host = 'http://localhost:8000';
     customers_host = 'http://localhost:8001';
     realtime_host = 'http://localhost:3001';
