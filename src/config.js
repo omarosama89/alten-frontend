@@ -1,7 +1,6 @@
 let vehicles_host;
 let customers_host;
 let realtime_host;
-console.log(process.env)
 if (process.env['NODE_ENV'] == 'development') {
     vehicles_host = 'http://localhost:8000';
     customers_host = 'http://localhost:8001';
