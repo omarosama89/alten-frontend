@@ -6,7 +6,7 @@ function VehicleFilter(props) {
       <label className="label label-default">by status:</label>
 
       <select className="form-control" onChange={props.callback}>
-        <option>All</option>
+        <option value=''>All</option>
         <option value="connected">Connected</option>
         <option value="disconnected">Disconnected</option>
       </select>
